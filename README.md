@@ -1,15 +1,51 @@
 # Week 1 Dark Web Dataset Analysis
 
-## Project Description
-Analysis of dark web datasets focusing on [describe what your project does].
+Project Overview
+This project analyzes a dark web dataset to explore cybercrime activities such as credential leaks and illicit service advertisements.
+The notebook applies exploratory data analysis (EDA) techniques using Python in Google Colab to uncover insights and visualize patterns in the dataset.
 
-## Files
-- week1_project.ipynb: Jupyter notebook with full analysis
-- week1_project.py: Python script version of the analysis
+Dataset
+File: agora.csv
+Description: Contains scraped data from a dark web marketplace/forum.
+Key Columns:
+Category → type of product/service (e.g., credentials, drugs, services)
+Vendor → seller/advertiser information
+Item → description of the listed item/service
+Price → listed price (if available)
+The dataset provides a foundation for studying cybersecurity threats and underground marketplace activity.
 
-## Requirements
-- Python 3.x
-- Libraries: pandas, numpy, matplotlib, seaborn
+Features / Analysis
+Data cleaning and preprocessing
+Frequency analysis of credential leaks and service advertisements
+Visualization of patterns (bar charts, distributions, word clouds)
+Insights into the dark web ecosystem and risks in cybersecurity
 
-## Usage
-Run the Jupyter notebook or Python script to see the analysis.
+Technologies Used
+Python
+Google Colab / Jupyter Notebook
+Libraries:
+pandas
+numpy
+matplotlib
+seaborn
+(optional) wordcloud, nltk, scikit-learn
+
+Installation / Setup
+Clone the repository:
+git clone https://github.com/your-username/darkweb-dataset-analysis.git
+cd darkweb-dataset-analysis
+
+Install dependencies:
+pip install -r requirements.txt
+
+Open the notebook:
+jupyter notebook week1_project.ipynb
+
+Results / Insights
+Identified most frequent categories in dark web listings.
+Found high frequency of credential leaks compared to service advertisements.
+Visualized vendor activity and item distribution trends.
+
+Disclaimer
+This project is for educational and research purposes only.
+The dataset has been used solely for data analysis practice and does not endorse or promote illegal activities.
