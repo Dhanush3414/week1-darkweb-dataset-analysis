@@ -31,6 +31,7 @@ import seaborn as sns
 #---Load dataset---
 df = pd.read_csv("/content/Agora.csv", encoding='latin')
 
+#----shows number of rows and columns-----
 df.shape
 
 # --------Preview first few rows-------
@@ -70,6 +71,7 @@ df.dropna(subset=['rating'], inplace=True)
 df.plot(kind = 'scatter', x = 'price', y = 'rating')
 plt.show()
 
+#-----univarient------
 # Frequency count for the 'vendor' column
 vendor_freq = df['vendor'].value_counts()
 print("\nTop 10 Vendors by Listings:")
@@ -85,6 +87,7 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 
+#------bivarient---------
 # First, ensure there are no missing values in the columns we're plotting
 plot_data = df.dropna(subset=['price', 'rating'])
 
